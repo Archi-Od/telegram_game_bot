@@ -9,7 +9,6 @@ const chats = {}
 const startGame = async (chatId) => {
     await bot.sendMessage(chatId, 'Я загадаю цифру от 0 до 9, а ты попробуй угадай, если не угадаешь я оформлю на тебя мой кредит! \nПопытка не пытка, но помни как Юлий проиграл два полцарства', gameOptions);
     chats[chatId] = Math.floor(Math.random() * 10);
-    await bot.sendMessage(chatId, );
 }
 
 const start = () => {
